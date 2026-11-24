@@ -31,7 +31,7 @@
 if __package__:
     from .projection import adjust_3d_to_robot_frame, project_2d_to_sphere
 else:
-    from projection import adjust_3d_to_robot_frame, project_2d_to_sphere
+    from robot_control.projection import adjust_3d_to_robot_frame, project_2d_to_sphere
 from interbotix_common_modules.common_robot.robot import robot_shutdown, robot_startup
 from interbotix_xs_modules.xs_robot.arm import InterbotixManipulatorXS
 from pathlib import Path

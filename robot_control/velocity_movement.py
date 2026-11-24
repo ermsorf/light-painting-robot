@@ -12,7 +12,7 @@ from interbotix_xs_modules.xs_robot.arm import InterbotixManipulatorXS
 if __package__:
     from .projection import adjust_3d_to_robot_frame, project_2d_to_sphere
 else:
-    from projection import adjust_3d_to_robot_frame, project_2d_to_sphere
+    from robot_control.projection import adjust_3d_to_robot_frame, project_2d_to_sphere
 
 
 def precompute_ik_path(bot, path, roll=0.0, pitch=0.0, yaw=None):
